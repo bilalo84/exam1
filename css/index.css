@@ -1,0 +1,426 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --firstcolor: #748182;
+  --seconedcoler:#343434;
+
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Montserrat", sans-serif;
+}
+/* start navbar css */
+.navbar-brand , .navbar-brand:hover{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: white;
+    
+}
+
+.navbar .nav-link{
+    color: white;
+   margin-left: 30px;
+   font-family: "Poppins", sans-serif;
+   font-size: 0.9rem;
+}
+.navbar .navbar-nav .nav-link.active{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    color:transparent;
+    border: none;
+}
+.navbar-collapse{
+
+    text-align: center;
+}
+.portfolio .nav-pills .nav-link.active{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    }
+.navbar{
+    background-color:rgba(0,0,0,0.6) ;
+}
+/* end navbar css */
+
+/* start home css */
+#Home{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: white;
+}
+.home h1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+.home h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.animation::after{
+    content: "";
+    animation: typing  5s  infinite;
+}
+
+
+/* start typing animatin */
+@keyframes typing {
+    0%{content: "Des |";}
+    5%{content: "Desig |";}
+    10%{content: "Designe |";}
+    20%{content: "Designer |";}
+    30%{content: " |";}
+    40%{content: "Dev |";}
+    60%{content: "Devel |";}
+    80%{content: "Develop |";}
+    90%{content: "Developer |";}
+    100%{content: " |";}
+  
+}
+/* end typing animatin */
+
+
+.home-icons a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin:5px;
+   
+}
+
+
+/* end home css */
+
+/* start about css */
+.about-img::before{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.aboutinfo p{
+    color: var(--firstcolor);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.89rem;
+    font-weight: 400;
+}
+.aboutinfo h3{
+    color: var(--seconedcoler);
+    font-weight: 800;
+}
+
+.progress{
+    margin-bottom: 20px;
+    height: 25px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.btn-download:hover{
+background-color: white !important ;
+color: black !important;
+border: 1px solid black;
+}
+.btn-contact:hover{
+    background-color: black !important ;
+    color: white !important;
+    border: none; 
+}
+/* end about css */
+
+/* start Services css */
+
+.serdot h1{
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+
+    
+}
+.serdot h1::before{
+    content: "";
+    width:100% ;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+
+}
+.item h6{
+    font-weight: 800;
+    font-size: 1.2rem;
+
+}
+.item p{
+    color: var(--firstcolor);
+}
+.item-icon{
+    transition: all 0.5s;
+}
+.item:hover .item-icon{
+    background-color: black !important;
+    color: white !important;
+} 
+
+/* end Services css */
+
+/* start Portfolio css */
+.portfolio button , .portfolio .nav-pills .nav-link.active{
+    background-color: transparent !important;
+    color: black;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.portfolio button:hover{
+color: black;
+}
+
+.prof-item{
+    position: relative;
+
+}
+.prof-cover{
+    background-color: rgba(255, 255, 255, 0.907);
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+ 
+    
+}
+
+.prof-cover-icon{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 2px;
+    font-size: 0.7rem;
+    padding-top: 8px;
+    padding-left: 8px;
+    border: 1px black solid;
+    transition: all 0.5s;
+}
+.prof-cover-icon:hover{
+    background-color: white;
+    color: black;
+}
+.prof-item:hover .prof-cover{
+opacity: 1;
+}
+.prof-cover h6 ,.prof-cover div{
+    transition: all 0.5s;
+}
+.prof-item:hover .prof-cover h6{
+    margin-bottom: 5px !important;
+    }
+
+    .prof-item:hover .prof-cover div{
+        margin-top: 0px !important;
+     }
+/* end Portfolio css */
+
+/* start Testimonials css */
+
+.testim-img{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.testimonials p{
+    color: var(--firstcolor);
+}
+.testimonials span{
+    font-size:0.75rem;
+    font-weight: 700;
+    color: var(--firstcolor);
+}
+
+.ca-in-newstyle{
+    margin-bottom: -3rem;
+}
+.ca-butn{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: var(--firstcolor) !important;
+}
+
+/* end Testimonials css */
+
+/* Start Number css */
+.num-item h3{
+font-weight: 900;
+font-size: 2rem;
+}
+.num-item p{
+    color: var(--firstcolor);
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+/* End Number css */
+
+/* start team css */
+
+.team-info{
+    background-color: rgb(52 52 52 / 80%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+.team-cover{
+    background-color: rgba(255, 255, 255, 0.907);
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    opacity: 0;
+    transform:scale(0.5) ;
+    transition: all 0.5s;
+}
+.team-img{
+    position: relative;
+    overflow: hidden;
+}
+.team-img:hover .team-img-1{
+    transform: scale(1.2);
+    }
+.team-icon{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 12px 0px 0px 12px;
+    margin: 4px;
+    border: 1px black solid;
+    transition: all 0.5s;
+}
+.team-icon:hover{
+background-color: white;
+color: black;
+border: 1px solid black;
+}
+.team-img img{
+    transition: all 0.5s;
+}
+
+
+.team-item:hover .team-icon{
+    transform: rotateY(180deg);
+}
+.team-item:hover .team-cover{
+opacity: 1;
+
+transform: rotateY(180deg) scale(1);
+
+}
+
+/* end team css */
+
+/* start contact css */
+.contact-icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    color:black;
+    border-radius: 50%;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.contact-item:hover .contact-icon{
+    color: white;
+    background-color: black !important;
+}
+.contact input , .contact textarea{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.contact input:focus , .contact textarea:focus{
+outline: none;
+}
+.contact button{
+    display: inline-block;
+    background-color: black;
+    padding: 5px 30px ;
+    color: white;
+    border-radius: 5px;
+    border: 1px black solid;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+
+}
+.contact button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+/* end contact css */
+
+/* start footer css */
+
+.footer{
+    padding: 25px;
+    color: var(--firstcolor);
+    text-align: center;
+}
